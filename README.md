@@ -139,48 +139,6 @@ The **Delivery** entity stores information related to the delivery of an order.
 
 ---
 
-### 7. Business Rules
-
-Business rules are conditions that are applied to the stored facts to generate decisions.
-
-The following rules are used in the system:
-
-#### Rule 1: Low Food Availability
-
-If the availability of a food item is less than **10**, then:
-
-```text
-Decision: Low Availability Alert
-```
-
-#### Rule 2: Premium Customer
-
-If the customer is a **Premium** member and the order amount is greater than **₹500**, then:
-
-```text
-Decision: Free Delivery
-```
-
-#### Rule 3: Failed Payment
-
-If the payment status is **Failed**, then:
-
-```text
-Decision: Payment Pending
-```
-
-#### Rule 4: Delivered Order
-
-If the order status is **Delivered**, then:
-
-```text
-Decision: Order Successfully Delivered
-```
-
-These rules demonstrate how the stored knowledge can be processed to support business decisions.
-
----
-
 ## 📂 Repository Structure
 
 ```text
