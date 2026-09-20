@@ -1,0 +1,159 @@
+# BUSINESS RULES – ONLINE FOOD DELIVERY SYSTEM
+
+This file contains the business rules used by the Online Food Delivery
+Knowledge Repository.
+
+The rules are applied to the facts stored in the knowledge base to
+generate useful business decisions.
+
+---
+
+## RULE 1: LOW FOOD AVAILABILITY
+
+Condition:
+If the availability of a food item is less than 10.
+
+Decision:
+Low Availability Alert
+
+Example:
+If the availability of Paneer Biryani is 5, the system generates:
+
+Decision: Low Availability Alert
+
+---
+
+## RULE 2: PREMIUM CUSTOMER
+
+Condition:
+If the customer is a Premium member AND the order amount is greater
+than ₹500.
+
+Decision:
+Free Delivery
+
+Example:
+If a Premium customer places an order worth ₹600, the system generates:
+
+Decision: Free Delivery
+
+---
+
+## RULE 3: FAILED PAYMENT
+
+Condition:
+If the payment status of an order is Failed.
+
+Decision:
+Payment Pending
+
+Example:
+If the payment for an order fails, the system generates:
+
+Decision: Payment Pending
+
+---
+
+## RULE 4: DELIVERED ORDER
+
+Condition:
+If the order status is Delivered.
+
+Decision:
+Order Successfully Delivered
+
+Example:
+If an order has been delivered successfully, the system generates:
+
+Decision: Order Successfully Delivered
+
+---
+
+## RULE 5: HIGH-VALUE ORDER
+
+Condition:
+If the order amount is greater than ₹1000.
+
+Decision:
+Priority Order
+
+Example:
+If a customer places an order worth ₹1500, the system generates:
+
+Decision: Priority Order
+
+---
+
+## RULE 6: HIGHLY RATED RESTAURANT
+
+Condition:
+If the restaurant rating is greater than or equal to 4.5.
+
+Decision:
+Recommended Restaurant
+
+Example:
+If the rating of Spice Hub is 4.5, the system generates:
+
+Decision: Recommended Restaurant
+
+---
+
+## RULE 7: LARGE QUANTITY ORDER
+
+Condition:
+If the quantity of food items in an order is greater than or equal
+to 5.
+
+Decision:
+Large Order Alert
+
+Example:
+If a customer orders 5 or more food items, the system generates:
+
+Decision: Large Order Alert
+
+---
+
+## SUMMARY OF BUSINESS RULES
+
+1. Low Food Availability
+   IF food availability < 10
+   THEN Low Availability Alert
+
+2. Premium Customer
+   IF membership = Premium
+   AND order amount > ₹500
+   THEN Free Delivery
+
+3. Failed Payment
+   IF payment = Failed
+   THEN Payment Pending
+
+4. Delivered Order
+   IF order status = Delivered
+   THEN Order Successfully Delivered
+
+5. High-Value Order
+   IF order amount > ₹1000
+   THEN Priority Order
+
+6. Highly Rated Restaurant
+   IF restaurant rating >= 4.5
+   THEN Recommended Restaurant
+
+7. Large Quantity Order
+   IF quantity >= 5
+   THEN Large Order Alert
+
+---
+
+## PURPOSE
+
+These seven business rules allow the knowledge repository to process
+stored facts and generate decisions for an online food delivery
+business system.
+
+The rules demonstrate rule-based decision making using knowledge
+representation and show how a real-world business system can use
+stored knowledge to generate automated decisions.
